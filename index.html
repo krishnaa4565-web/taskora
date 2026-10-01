@@ -1038,6 +1038,7 @@ $("#benefitOverlay").addEventListener("click",e=>{if(e.target===$("#benefitOverl
 $("#cardCancelBtn").addEventListener("click",closeCardModal);
 $("#cardSaveBtn").addEventListener("click",saveCardFromModal);
 $("#cardDeleteBtn").addEventListener("click",()=>editingCardId&&deleteCard(editingCardId));
+$("#cardsView").addEventListener("click",e=>{ if(e.target.closest("#addCardBtn")) openCardModal(); });
 $("#benefitCancelBtn").addEventListener("click",closeBenefitModal);
 $("#benefitSaveBtn").addEventListener("click",saveBenefit);
 $("#calendarView").addEventListener("click",e=>{
